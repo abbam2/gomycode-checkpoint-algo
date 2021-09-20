@@ -1,7 +1,7 @@
 ALGORITHM read_Sentence
 VAR
     sentence:STRING;
-    array_word : ARRAY_OF type[length];
+    array_word : ARRAY_OF STRING;
     sentence_count, word_count, vowels_count:INTEGER;
     
 BEGIN
