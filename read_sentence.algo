@@ -1,0 +1,21 @@
+ALGORITHM read_Sentence
+VAR
+    sentence:STRING;
+    array_word : ARRAY_OF type[length];
+    sentence_count, word_count, vowels_count:INTEGER;
+    
+BEGIN
+    Read(sentence)
+    N:= sentence.length-1
+    sentence_count:= sentence.length;
+        array_word:= sentence.split(" ");
+    world_count:=array_word.length;
+    FOR i FROM 0 to N-1 DO
+        IF (sentence.charAt(i)=="a"|| sentence.charAt(i)=="e"|| 
+        sentence.charAt(i)=="i" || sentence.charAt(i)=="o"||
+        sentence.charAt(i)=="u") THEN
+            vowels_count++
+        END_IF
+    END_FOR    
+    Write(vowels_count, word_count, sentence_count)
+END
